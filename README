@@ -1,0 +1,29 @@
+Hello, my name is Mario Stoyanov. Thank you so much for taking me into consideration for this position.
+
+To run the application, you may have to set up an C# environment. I had to set something up in VSCode to work on this challenge. 
+If you don’t have .NET installed on your machine, I followed this video to set up my environment: https://www.youtube.com/watch?v=Y7GMBmd1EAk
+
+After doing this, in a new folder,  I created a new Web API using the “dotnet new webapi” command. 
+This command built out the basics frame for the endpoint and provided me with a Swagger UI to test my endpoint. 
+
+After clearing out the generic code, I began by writing the GetCheckoutTotal endpoint. 
+
+In an effort to keep the controller file clean and the program modular, I created a helper class that would contain the “data” as well as perform the calculation for the total price. In the future, I would remove the array of watches I have as hard coded data to a DB table and perhaps query the table for the relevant information for each watch that is in the cart. 
+
+I defined the discount “functionality” as optional properties on a watch and as a result, I check to see if a watch has a discount in order to properly calculate the total. However, I don’t like that I’m using “watches[i-1]” to retrieve information about a watch and that is something that I would also change in the future.
+
+After testing different methods of calculating the total, and some trial and error, I landed on what I have within CheckoutTotal(). It is the most concise iteration of my ideas. I will say that I had some difficulty choosing names for some of the variables but I think that’s often the hardest part about programming. I hope they make sense. 
+
+I created a response object CheckoutTotalResponse that would hold the total from my helper method and return it to the client. This also helps modulate the code and keep the endpoint “clean” 
+
+Finally after getting everything working and testing a bunch of scenarios manually, I wrote some unit tests. I’m familiar with the FluentAssertions and Xunit testing libraries so that is what I used. I couldn’t figure out how to run the tests in my environment but I think everything should work. 
+
+I also do not have github set up in my local environment so I did not commit things as I went along. If I were to, however, I would’ve committed after setting up the file structure, after getting the helper method working, and after finishing the unit tests. I could have also committed after creating the generic endpoint and clearing out all of the generic code but I personally don’t like committing unless a piece of functionality is “working”(builds and runs without errors). 
+
+**When running the program**
+After unzipping the program in a new folder, open a terminal window at the location and run 
+dotnet run
+This builds and runs the program and by default listens on http://localhost:5281 but you have to append some stuff to get the Swagger UI. The full path is http://localhost:5281/swagger/index.html. Once on this page expand the GetCheckoutTotal endpoint and press the “Try it out” button. Fill out the request body in the format provided in the problem documentation and press “Execute”. The response is at the bottom of the container. 
+
+
+Thank you again for the opportunity, this coding challenge was really fun! I look forward to hearing back soon!
