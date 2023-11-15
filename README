@@ -18,7 +18,9 @@ I created a response object CheckoutTotalResponse that would hold the total from
 
 Finally after getting everything working and testing a bunch of scenarios manually, I wrote some unit tests. I’m familiar with the FluentAssertions and Xunit testing libraries so that is what I used. I couldn’t figure out how to run the tests in my environment but I think everything should work. 
 
-I also do not have github set up in my local environment when I wrote the program so I did not commit things as I went along. I couldn't send a zip file over email so I pushed to this repo afterwards. If I were to have done it as I worked, however, I would’ve committed after setting up the file structure, after getting the helper method working, and after finishing the unit tests. I could have also committed after creating the generic endpoint and clearing out all of the generic code but I personally don’t like committing unless a piece of functionality is “working”(builds and runs without errors). 
+I also do not have github set up in my local environment when I wrote the program so I did not commit things as I went along. I couldn't send a zip file over email so I pushed to this repo afterwards. If I were to have done it as I worked, however, I would’ve committed after setting up the file structure, after getting the helper method working, and after finishing the unit tests. I could have also committed after creating the generic endpoint and clearing out all of the generic code but I personally don’t like committing unless a piece of functionality is “working”(builds and runs without errors). I use conventional commits typically so something like this for example: 
+feat(api): added watch API endpoint and logic 
+test(api): added unit tests for logic
 
 **When running the program**
 After unzipping the program in a new folder, open a terminal window at the location and run 
