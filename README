@@ -24,6 +24,3 @@ test(api): added unit tests for logic
 After unzipping the program in a new folder, open a terminal window at the location and run 
 dotnet run
 This builds and runs the program and by default listens on http://localhost:5281 but you have to append some stuff to get the Swagger UI. The full path is http://localhost:5281/swagger/index.html. Once on this page expand the GetCheckoutTotal endpoint and press the “Try it out” button. Fill out the request body in the format provided in the problem documentation and press “Execute”. The response is at the bottom of the container. 
-
-
-Thank you again for the opportunity, this coding challenge was really fun! I look forward to hearing back soon!
